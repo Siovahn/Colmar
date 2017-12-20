@@ -1,10 +1,15 @@
+.mobile {
+  display: none;
+}
+
+
   /* Universal */
 
 html {
   font-size: 18px;
   max-width: 1056px;
-  margin: auto;
   color: #4c4c4c;
+  margin: auto;
   }
 
 body {
@@ -27,9 +32,25 @@ body {
     font-weight: bold;
   }
 
+  h2 {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+
   h4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1.10rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.1rem;
   }
 
 
@@ -37,9 +58,8 @@ body {
 
 .flex-container1 {
     display: flex;
-    margin-left: 24px;
-    margin-right: 24px;
     height: 64px;
+    border: 1px solid purple;
   }
 
 .nav .desktop {
@@ -88,27 +108,35 @@ body {
     height: auto;
     background-color: #d3d3d3;
     margin-bottom: 32px;
-    margin-left: 24px;
-    margin-right: 24px;
+    border: 1px solid orange;
   }
 
 .hero .flex-container2 img {
     width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
 .flex-container2 .left-panel {
-    width: 60%;
+    width: 634px;
     padding: 32px 24px;
+    align-self: flex-start;
   }
+
+  .flex-container2 .right-panel {
+      width: 425px;
+      padding: 32px 24px;
+      margin-left: 24px;
+    }
 
 .tagline {
     height: auto;
-    padding-left: 20px;
-    margin-right: 60px;
     margin-top: 6rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    text-align: left;
+    width: 320px;
   }
 
 .tagline h4 {
@@ -138,7 +166,56 @@ body {
 
 .flex-container3 {
   display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.flex-container3 .left-panel {
+  border: 1px solid green;
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+}
+
+.flex-container3 .left-panel img {
+  width: 100%;
+}
+
+.flex-container3 .right-panel {
+  border: 1px solid blue;
+  width: 35%;
+  padding: 16px 0px 32px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-container3 .right-panel img.desktop {
+  width: 35%;
+  padding: 16px;
+}
+
+.flex-container3 .right-panel img. mobile {
+  display: none;
+}
+
+.box {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-style: double;
+  border: 1px solid #cccccc;
+  margin-bottom: 1px;
+}
+
+.box img.desktop {
+  width: 35%;
+  padding: 16px;
+}
+
+.box img.mobile {
+  display: none;
 }
 
 .flex-container3 .left-panel h2 {
@@ -174,52 +251,4 @@ body {
 .content a:active {
   color: #9dcdf9;
   text-decoration: underline;
-}
-
-.flex-container3 .right-panel {
-  border-left: 1px solid #DCDCDC;
-  padding: 16px 0px 32px 0px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-
-.orientation {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.our-campus {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.guest-lecture {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex-container3 .right-panel img.desktop {
-  width: 35%;
-  padding: 16px;
-}
-
-.flex-container3 .right-panel img. mobile {
-  display: none;
-}
-
-.second-info {
-  border-top: 1px solid #DCDCDC;
-  border-bottom: 1px solid #DCDCDC;
-}
-
-.lecture {
-  background-color: #DCDCDC;
 }
