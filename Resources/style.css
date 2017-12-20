@@ -167,6 +167,11 @@ body {
   border: 1px solid red;
 }
 
+.flex-container3 .caption {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
 .flex-container3 .left-panel {
   border: 1px solid green;
   width: 60%;
@@ -262,6 +267,8 @@ body {
   margin-top:32px;
   justify-content: space-between;
   flex-direction: column;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .flex-container4 .headline {
@@ -276,13 +283,15 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
 .flex-container4 .courses .course {
     border: 1px solid gray;
-    width: 32%;
+    width: 31%;
+    background-color: white;
+  margin-bottom: 24px;
 }
 
 .flex-container4 img {
@@ -290,5 +299,69 @@ body {
 }
 
 .flex-container4 .course-content {
-    margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top:8px;
+  margin-bottom: 24px;
+}
+
+.flex-container4 h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+.flex-container4 p {
+  font-size: .7rem;
+}
+
+.flex-container4 span {
+  font-size: .7rem;
+  line-height: 1.5rem;
+}
+
+/* Thesis */
+
+.flex-container5 {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  margin-top:32px;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+
+.flex-container5 .headline {
+  margin: 32px 0px;
+  text-align: center;
+}
+
+.flex-container5 .left-panel {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.flex-container5 .right-panel {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.flex-container5 .left-panel img {
+  width: 100%;
+}
+
+.flex-container5 .right-panel img.desktop {
+  width: 40%;
 }
