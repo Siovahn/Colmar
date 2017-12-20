@@ -10,7 +10,7 @@ body {
   background-color: white;
 }
 
-.container {
+.flex-container1 {
   display: flex;
   max-width: 1050px;
   margin: auto;
@@ -52,7 +52,7 @@ body {
     background-color: white;
   }
 
-  header .container {
+  header .flex-container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
