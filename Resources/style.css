@@ -2,125 +2,224 @@
 
 html {
   font-size: 18px;
+  max-width: 1056px;
+  margin: auto;
+  color: #4c4c4c;
   }
 
 body {
   font-family: sans-serif;
-  font-size: 1rem;
   background-color: white;
 }
 
-.flex-container1 {
-  display: flex;
-  max-width: 1050px;
-  margin: auto;
+.desktop a:hover {
+  color: #4c4cff;
 }
+
 
 @media only screen and (max-width: 480px) {
   .container {
-    width: 100%;
+    width: 100%;}
   }
 
   h1 {
-
-  }
-
-  h2 {
-
+    font-size: 2.15rem;
+    font-weight: bold;
   }
 
   h4 {
-
-  }
-
-  h6 {
-
-  }
-
-  p {
-
-  }
-
-  span {
-
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 
 
   /* navigation */
 
-  header {
-    background-color: white;
-  }
-
-  header .flex-container1 {
+.flex-container1 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
     height: 64px;
   }
 
-  .logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo img {
-    height: 2.75rem;
-    padding-left: 24px;
-  }
-
-  nav {
+.nav .desktop {
     text-align: right;
     flex-grow: 1;
+    margin-right: 24px;
+    align-self: center;
   }
 
-  .Colmar {
-    font-size:
-    font-weight:
-  }
+.nav .desktop a {
+  color: #383838;
+  padding-right: 16px;
+  text-decoration: none;
+}
 
-  .Academy {
-    font-size:
-    font-weight:
-    color: gray;
-  }
-
-  .desktop a {
-    display: inline-block;
-    padding-right: 16px;
+.desktop a:active {
     color: #383838;
-    font-size:
+  }
+
+.desktop a:hover {
+      color: #4c4cff;
+    }
+
+@media only screen and (min-width: 480px) {
+  .nav .mobile {
+        display: none;}
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 2.75rem;
+  padding-left: 24px;
+}
+
+
+  /* Hero Section */
+
+.flex-container2 {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    background-color: #d3d3d3;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+.hero .flex-container2 img {
+    width: 100%;
+  }
+
+.flex-container2 .left-panel {
+    width: 60%;
+    padding: 32px 24px;
+  }
+
+.tagline {
+    height: auto;
+    padding-left: 20px;
+    margin-right: 60px;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+.tagline h4 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+.tagline a {
+    background-color: #383838;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
     text-decoration: none;
   }
 
-  .desktop a:hover {
-    color:
+.tagline a:hover {
+    background-color: #808080;
   }
 
-  .desktop a:active {
-    color:
+.tagline a:active {
+    background-color: #808080;
   }
 
-  nav.mobile {
-    display: none;
-  }
 
-  @media only screen and (max-width: 480px) {
+/* Practicing & Sidebar */
 
-    nav.desktop {
-      display: none;
-    }
+.flex-container3 {
+  display: flex;
+  justify-content: space-between;
+}
 
-    .logo {
-      display: none;
-    }
+.flex-container3 .left-panel h2 {
+  padding-top: 32px;
+}
 
-    nav.mobile {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-right: 24px;
-      padding-left: 24px;
-    }
-  }
+.flex-container3 .left-panel p {
+  padding: 24px 24px 24px 0px;
+}
+
+.content {
+  padding: 16px 1px 16px 0px;
+  width: 100%;
+}
+
+.content p {
+  padding-top: 8px;
+}
+
+.content a {
+  color: #4ba3f4;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding-top: .9rem;
+}
+
+.content a:hover {
+  color: #9dcdf9;
+  text-decoration: underline;
+}
+
+.content a:active {
+  color: #9dcdf9;
+  text-decoration: underline;
+}
+
+.flex-container3 .right-panel {
+  border-left: 1px solid #DCDCDC;
+  padding: 16px 0px 32px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.orientation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-campus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guest-lecture {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container3 .right-panel img.desktop {
+  width: 35%;
+  padding: 16px;
+}
+
+.flex-container3 .right-panel img. mobile {
+  display: none;
+}
+
+.second-info {
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.lecture {
+  background-color: #DCDCDC;
+}
