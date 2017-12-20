@@ -1,0 +1,126 @@
+  /* Universal */
+
+html {
+  font-size: 18px;
+  }
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  max-width: 1050px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+
+  }
+
+  h2 {
+
+  }
+
+  h4 {
+
+  }
+
+  h6 {
+
+  }
+
+  p {
+
+  }
+
+  span {
+
+  }
+
+
+  /* navigation */
+
+  header {
+    background-color: white;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 2.75rem;
+    padding-left: 24px;
+  }
+
+  nav {
+    text-align: right;
+    flex-grow: 1;
+  }
+
+  .Colmar {
+    font-size:
+    font-weight:
+  }
+
+  .Academy {
+    font-size:
+    font-weight:
+    color: gray;
+  }
+
+  .desktop a {
+    display: inline-block;
+    padding-right: 16px;
+    color: #383838;
+    font-size:
+    text-decoration: none;
+  }
+
+  .desktop a:hover {
+    color:
+  }
+
+  .desktop a:active {
+    color:
+  }
+
+  nav.mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    nav.desktop {
+      display: none;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    nav.mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+  }
