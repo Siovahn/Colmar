@@ -1,192 +1,137 @@
-/* Media Queries */
 
-@media only screen
-  and (min-device-width: 481px)
-  and (max-device-width: 1300px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-  .mobile {
-    display: none;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-}
-
-@media only screen
-  and (min-device-width: 1px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .container {
-      width: 75%;
-    }
-
-    .desktop {
-      display: none;
-    }
-
-    nav .mobile {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-right: 5rem;
-      padding-left: 5rem;
-    }
-
-    .hero .main {
-      display: inline;
-      width: 480px;
-      border: 2px solid red;
-    }
-
-    .hero .tagline {
-      display: flex;
-      width: auto;
-      flex-basis: 480px;
-      border: 2px solid red;
-    }
-
-    .practice .left-panel {
-      display: none;
-      border: 2px solid black;
-    }
-
-    .practice .right-panel {
-      display: inline;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      border: 2px solid purple;
-    }
-
-    .box {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .box img.desktop {
-      display: none;
-    }
-
-    .box img.mobile {
-      display: flex;
-      width: 100%;
-    }
-
-    .content {
-      padding: 0px;
-      width: 100%;
-      margin-top: 16px;
-    }
-
-    .featured-courses {
-      display: inline;
-    }
-
-    .featured-courses .courses {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-  img {
-    width: auto;
-  }
-
-  .tagline a {
-    width: 100%;
-    background-color: #808080;
-  }
-
-  .tagline a:hover {
-    opacity: .7;
-  }
-
-  .tagline a:active {
-    opacity: .7;
-  }
-
-}
 
 
   /* Universal */
 
 html {
-  font-size: 16px;
-  width: 1056px;
+  font-size: 18px;
+  max-width: 1056px;
+  color: #4c4c4c;
   margin: auto;
   }
 
 body {
   font-family: sans-serif;
-  margin: auto;
-}
-
-h1 {
-    font-size: 2.15rem;
-    font-weight: bold;
-  }
-
-h2 {
-    font-size: 1.9rem;
-    font-weight: bold;
-  }
-
-h4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-
-h6 {
-    font-size: 1.10rem;
-    font-weight: 500;
-  }
-
-p {
-    font-weight: 400;
-    font-size: .8rem;
-    line-height: 1.1rem;
-}
-
-
-
-  /* Navigation */
-
-.menu {
-    display: flex;
-    height: 4rem;
-  }
-
-nav {
-  align-self: center;
-}
-
-nav .desktop {
-    text-align: right;
-    flex-grow: 1;
-    margin-right: 1.5rem;
-  }
-
-nav .desktop a {
-  color: #383838;
-  padding-right: 1rem;
-  text-decoration: none;
-}
-
-.mobile .icon {
-  display: flex;
-  justify-content: center;
+  background-color: white;
 }
 
 .desktop a:hover {
   color: #4c4cff;
+}
+
+@media only screen and (max-width: 1056px) {
+  header {
+    padding-top: 0;
+  }
+
+  nav.container {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.truncated-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 480px) {
+  .mobile {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .container {
+    width: 100%;}
+  }
+
+  h1 {
+    font-size: 2.15rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1.10rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.1rem;
+  }
+
+
+  /* navigation */
+
+.flex-container1 {
+    display: flex;
+    height: 64px;
+  }
+
+.nav .desktop {
+    text-align: right;
+    flex-grow: 1;
+    margin-right: 24px;
+    align-self: center;
+  }
+
+.nav .desktop a {
+  color: #383838;
+  padding-right: 16px;
+  text-decoration: none;
 }
 
 .desktop a:active {
@@ -197,6 +142,11 @@ nav .desktop a {
       color: #4c4cff;
     }
 
+@media only screen and (min-width: 480px) {
+  .nav .mobile {
+        display: none;}
+}
+
 .logo {
   display: flex;
   justify-content: space-between;
@@ -205,30 +155,30 @@ nav .desktop a {
 
 .logo img {
   height: 2.75rem;
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 
 
   /* Hero Section */
 
-.main {
+.flex-container2 {
     display: flex;
     justify-content: flex-start;
     height: auto;
     background-color: #d3d3d3;
   }
 
-.hero .main img {
+.hero .flex-container2 img {
     width: 100%;
   }
 
-.main .left-panel {
+.flex-container2 .left-panel {
     width: 60%;
-    padding: 2rem 1.5rem;
+    padding: 32px 24px;
     align-self: flex-start;
   }
 
-  .main .right-panel {
+  .flex-container2 .right-panel {
       width: 40%;
     }
 
@@ -243,15 +193,15 @@ nav .desktop a {
   }
 
 .tagline h4 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
 .tagline a {
     background-color: #383838;
     color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-align: center;
     text-decoration: none;
   }
@@ -267,26 +217,26 @@ nav .desktop a {
 
 /* Practicing & Sidebar */
 
-.practice {
+.flex-container3 {
   display: flex;
   flex-direction: row;
 }
 
-.practice .caption {
+.flex-container3 .caption {
   font-size: .8rem;
   font-weight: bold;
 }
 
-.practice .left-panel {
+.flex-container3 .left-panel {
   width: 60%;
-  padding: 2rem 1.5rem;
+  padding: 32px 24px 32px 24px;
 }
 
-.practice .left-panel img {
+.flex-container3 .left-panel img {
   width: 100%;
 }
 
-.practice .right-panel {
+.flex-container3 .right-panel {
   width: 40%;
   display: flex;
   justify-content: flex-start;
@@ -294,11 +244,11 @@ nav .desktop a {
   flex-direction: column;
 }
 
-.practice .right-panel img.desktop {
+.flex-container3 .right-panel img .desktop {
   width: 40%;
 }
 
-.practice .right-panel img. mobile {
+.flex-container3 .right-panel img .mobile {
   display: none;
 }
 
@@ -312,36 +262,36 @@ nav .desktop a {
   margin-bottom: 1px;
 }
 
-.box img.desktop {
+.box img .desktop {
   width: 100%;
-  padding: 1rem;
+  padding: 16px;
 }
 
-.box img.mobile {
+.box img .mobile {
   display: none;
 }
 
-.practice .left-panel h2 {
-  padding-top: 2rem;
+.flex-container3 .left-panel h2 {
+  padding-top: 32px;
 }
 
-.practice .left-panel p {
-  padding: 1.5rem;
+.flex-container3 .left-panel p {
+  padding: 24px 24px 24px 0px;
 }
 
 .content {
-  padding: 1rem 0rem;
+  padding: 16px 1px 16px 0px;
   width: 100%;
 }
 
 .content p {
-  padding-top: .5rem;
+  padding-top: 8px;
 }
 
 .content a {
   color: #4ba3f4;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 14px;
   display: block;
   padding-top: .9rem;
 }
@@ -360,25 +310,24 @@ nav .desktop a {
   background-color: #d3d3d3;
 }
 
-
 /* Start Learning */
 
-.featured-courses {
+.flex-container4 {
   display: flex;
   background-color: #e5e5e5;
-  margin-top:2rem;
+  margin-top:32px;
   justify-content: space-between;
   flex-direction: column;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
 }
 
-.featured-courses .headline {
-  margin: 2rem 0rem;
+.flex-container4 .headline {
+  margin: 32px 0px;
   text-align: center;
 }
 
-.featured-courses .courses {
+.flex-container4 .courses {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -388,34 +337,34 @@ nav .desktop a {
     margin: 0 auto;
 }
 
-.featured-courses .courses .course {
+.flex-container4 .courses .course {
     width: 31%;
     background-color: white;
-    margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
-.featured-courses img {
+.flex-container4 img {
     width: 100%;
 }
 
-.featured-courses .course-content {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+.flex-container4 .course-content {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top:8px;
+  margin-bottom: 24px;
 }
 
-.featured-courses h6 {
+.flex-container4 h6 {
   font-size: 1.1rem;
   font-weight: bold;
   line-height: 1.8rem;
 }
 
-.featured-courses p {
+.flex-container4 p {
   font-size: .7rem;
 }
 
-.featured-courses span {
+.flex-container4 span {
   font-size: .7rem;
   line-height: 1.5rem;
 }
@@ -424,36 +373,36 @@ nav .desktop a {
 
 .headline {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
-.thesis {
+.flex-container5 {
   display: flex;
   flex-direction: row;
   margin-bottom: 32px;
 }
 
-.thesis .left-panel {
+.flex-container5 .left-panel {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 60%;
     align-self: flex-start;
-    margin-right: 1.5rem;
+    margin-right: 24px;
 }
 
-.thesis .right-panel {
+.flex-container5 .right-panel {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     width: 40%;
 }
 
-.thesis .right-panel img {
+.flex-container5 .right-panel img {
   width: 35%;
 }
 
-.thesis .right-panel .fisma {
+.flex-container5 .right-panel .fisma {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -462,7 +411,7 @@ nav .desktop a {
     align-items: center;
 }
 
-.thesis .right-panel .nyc {
+.flex-container5 .right-panel .nyc {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -471,15 +420,15 @@ nav .desktop a {
     align-items: center;
 }
 
-.thesis .right-panel img {
+.flex-container5 .right-panel img {
   width: 35%;
-  padding: 1rem;
+  padding: 16px;
 }
 
-.thesis .left-panel .content {
-  margin-bottom: 2rem;
-  margin-left: 1rem;
-  padding: 1rem;
+.flex-container5 .left-panel .content {
+  margin-bottom: 32px;
+  margin-left: 16px;
+  padding: 16px;
 }
 
 
@@ -493,8 +442,8 @@ nav .desktop a {
 }
 
 footer p {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 footer .container {
@@ -510,13 +459,13 @@ nav {
 }
 
 .footer-nav a {
-  padding-right: 1rem;
+  padding-right: 16px;
   font-size: .75rem;
   text-decoration: none;
 }
 
 .footer .desktop {
     text-align: right;
-    margin-right: 1.5rem;
+    margin-right: 24px;
     align-self: center;
   }

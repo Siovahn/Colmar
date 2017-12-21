@@ -8,37 +8,37 @@
 </head>
 
 <body>
+  <header>
+    <div class="container">
+      <div class="menu">
+          <div class="logo">
+            <img class="desktop" src="./assets/images/ic-logo.svg" alt="Colmar Academy logo">
+            <span class="desktop" style="font-weight: bold; font-size: 24px;">COLMAR</span><span class="desktop" style="font-size: 24px; color: gray;">ACADEMY</span>
+          </div>
 
-  <div class="nav">
-    <div class="flex-container1">
-      <div class="logo">
-        <img src="./assets/images/ic-logo.svg" alt="Colmar Academy logo">
-        <span style="font-weight: bold; font-size: 24px;">COLMAR</span><span style="font-size: 24px; color: gray;">ACADEMY</span>
+          <nav>
+            <div class="desktop">
+              <a href="#">On campus</a>
+              <a href="#">Online for companies</a>
+              <a href="#">Sign In</a>
+            </div>
+
+            <div class="mobile">
+              <img class="icon" src="./assets/images/ic-logo.svg" alt="Colmar Academy logo">
+              <img class="icon" src="./assets/images/ic-on-campus.svg" alt="On campus">
+              <img class="icon" src="./assets/images/ic-online.svg" alt="Online">
+              <img class="icon" src="./assets/images/ic-login.svg" alt="Sign in">
+            </div>
+          </nav>
+        </div>
       </div>
-
-      <div class="desktop">
-        <a href="#">On campus</a>
-        <a href="#">Online for companies</a>
-        <a href="#">Sign In</a>
-      </div>
-
-      <div class="mobile">
-        <img class="mobile-icon" src="./assets/images/ic-logo.svg" alt="Colmar Academy logo">
-        <img class="mobile-icon" src="./assets/images/ic-on-campus.svg" alt="On campus">
-        <img class="mobile-icon" src="./assets/images/ic-online.svg" alt="Online">
-        <img class="mobile-icon" src="./assets/images/ic-login.svg" alt="Sign in">
-      </div>
-    </div>
-  </div>
-
+    </header>
 
   <div class="hero">
-    <div class="flex-container2">
-
+    <div class="main">
       <div class="left-panel">
         <img src="./assets/images/banner.jpg" alt="students studying">
       </div>
-
       <div class="right-panel">
         <div class="tagline">
           <h1>Learn something new everyday</h1>
@@ -46,24 +46,25 @@
           <a href="#" target="_blank">Start Here</a>
         </div>
       </div>
-
+      </div>
     </div>
   </div>
 
 
-  <div class="flex-container3">
+  <div class="practice">
     <div class="left-panel">
+      <div class="desktop">
       <img src="./assets/images/information-main.jpg" alt="student practicing">
       <h2> It doesn't hurt to keep practicing</h2>
       <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
       <span class="caption">Emmanual, Sr Strategist at Hiring.com</span>
+      </div>
     </div>
 
     <div class="right-panel">
-
-      <div class="box">
-        <img class="desktop" src="./assets/images/information-orientation.jpg">
-        <img class="mobile" src="./assets/images/information-orientation-mobile.jpg"a>
+      <div class="box" id="orientation">
+        <img class="desktop" src="./assets/images/information-orientation.jpg" alt="orientation">
+        <img class="mobile" src="./assets/images/information-orientation-mobile.jpg" alt="orientation">
         <div class="content">
           <h6><span style="font-weight: bold;">Orientation Date</span></h6>
           <p>Tues 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -71,9 +72,9 @@
         </div>
       </div>
 
-      <div class="box">
-        <img class="desktop" src="./assets/images/information-campus.jpg">
-        <img class="mobile" src="./assets/images/information-campus-mobile.jpg">
+      <div class="box" id="campus">
+        <img class="desktop" src="./assets/images/information-campus.jpg" alt="campus info">
+        <img class="mobile" src="./assets/images/information-campus-mobile.jpg" alt="campus info">
         <div class="content">
           <h6><span style="font-weight: bold;">Our Campus</span></h6>
           <p>Find which campus is close by you</p>
@@ -82,8 +83,8 @@
       </div>
 
       <div class="box" id="guest-box">
-        <img class="desktop" src="./assets/images/information-guest-lecture.jpg">
-        <img class="mobile" src="./assets/images/information-guest-lecture-mobile.jpg">
+        <img class="desktop" src="./assets/images/information-guest-lecture.jpg" alt="guest lecturer">
+        <img class="mobile" src="./assets/images/information-guest-lecture-mobile.jpg" alt="guest lecturer">
         <div class="content">
           <h6><span style="font-weight: bold;">Our guest lecture</span></h6>
           <p>Join a keynote with Oliver Sack about music about medical treatment</p>
@@ -95,69 +96,75 @@
   </div>
 
 
-  <div class="flex-container4">
+  <div class="featured-courses">
     <div class="headline"><h2>Start learning</h2></div>
 
       <div class="courses">
 
         <div class="course">
           <div class="course-img">
-            <img src="./assets/images/course-software.jpg" alt="Software engineering">
+            <img class="desktop" src="./assets/images/course-software.jpg" alt="Software engineering">
           </div>
           <div class="course-content">
             <h6>Software engineering</h6>
-            <span>COURSES</span>
+            <div class="desktop"><span>COURSES</span>
             <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
           </div>
         </div>
         <div class="course">
           <div class="course-img">
-            <img src="./assets/images/course-computer-art.jpg" alt="Computer art">
+            <img class="desktop" src="./assets/images/course-computer-art.jpg" alt="Computer art">
           </div>
           <div class="course-content">
             <h6>Computer art</h6>
-            <span>COURSES</span>
+            <div class="desktop"><span>COURSES</span>
             <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
           </div>
         </div>
         <div class="course">
           <div class="course-img">
-            <img src="./assets/images/course-design.jpg">
+            <img class="desktop" src="./assets/images/course-design.jpg">
           </div>
           <div class="course-content">
             <h6>Design</h6>
-            <span>COURSES</span>
+            <div class="desktop"><span>COURSES</span>
             <p>User Experience Deisgn, User Research, Visual Design</p>
+          </div>
           </div>
         </div>
         <div class="course">
           <div class="course-img">
-            <img src="./assets/images/course-data.jpg" alt="Data">
+            <img class="desktop" src="./assets/images/course-data.jpg" alt="Data">
           </div>
           <div class="course-content">
             <h6>Data</h6>
-            <span>COURSES</span>
+            <div class="desktop"><span>COURSES</span>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
           </div>
         </div>
         <div class="course">
           <div class="course-img">
-            <img src="./assets/images/course-business.jpg" alt="Business">
+            <img class="desktop" src="./assets/images/course-business.jpg" alt="Business">
           </div>
           <div class="course-content">
             <h6>Business</h6>
-            <span>COURSES</span>
+            <div class="desktop"><span>COURSES</span>
             <p>Product Development, Business Development, Startup</p>
+            </div>
           </div>
         </div>
         <div class="course">
           <div class="course-img">
-            <img src="./assets/images/course-marketing.jpg">
+            <img class="desktop" src="./assets/images/course-marketing.jpg">
           </div>
           <div class="course-content">
             <h6>Marketing</h6>
-            <span>COURSES</span>
+            <div class="desktop"> <span>COURSES</span>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
           </div>
         </div>
       </div>
@@ -167,15 +174,19 @@
 <div class="headline"><h2>Thesis exhibit</h2></div>
 
 
-<div class="flex-container5">
+<div class="thesis">
 
         <div class="left-panel">
           <video src="./assets/videos/thesis.mp4" video width="100%" height="100%" controls=""></video>
-          <h3>Reimagine urban</h3>
+          <div class="content">
+          <div class="desktop">
+          <h6>Reimagine urban</h6>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          </div>
         </div>
-
+</div>
         <div class="right-panel">
+          <div class="desktop">
           <div class="fisma">
             <img class="desktop" src="./assets/images/thesis-fisma.jpg">
             <div class="content">
@@ -191,30 +202,22 @@
               <p>Research study about New York</p>
             </div>
           </div>
+          </div>
         </div>
-
       </div>
-
-
-
-
-
-
-
-
-
-
 
   <footer>
     <div class="flex-container6">
       <p>© 2016 Colmar Academy. All rights reserved</p>
       <nav class="footer-nav">
+        <div class="desktop">
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
+      </div>
       </nav>
     </div>
   </footer>
-
+</div>
 </body>
 
 
